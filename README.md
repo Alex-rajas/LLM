@@ -55,3 +55,27 @@ LLM/
 ├─ requirements.txt # Dependencias
 
 └─ venv/ # Entorno virtual
+
+
+---
+
+## ⚙️ Instalación
+
+1. Clonar el repositorio:
+
+```bash
+git clone https://github.com/Alex-rajas/LLM
+cd LLM
+
+```
+2. Crear y activar el entorno virtual
+```bash
+python -m venv venv
+venv\Scripts\activate
+
+```
+
+
+
+
+
