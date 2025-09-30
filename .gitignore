@@ -1,0 +1,26 @@
+# Evitar que subas tu API Key
+.env
+
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Streamlit
+.streamlit/
+
+# Archivos de logs
+*.log
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
