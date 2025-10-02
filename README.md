@@ -56,6 +56,15 @@ LLM/
 
 └─ venv/ # Entorno virtual
 
+├─ check_models.py
+
+├─ list_models.py
+
+├─ test.py
+
+├─ test_grok.py
+
+
 
 ---
 
@@ -69,13 +78,57 @@ cd LLM
 
 ```
 2. Crear y activar el entorno virtual
+### Windows:
+
 ```bash
 python -m venv venv
 venv\Scripts\activate
 
 ```
+### Linux / Mac:
+```bash
+python -m venv venv
+source venv/bin/activate
+
+```
+3. Instalar dependencias
+
+```bash
+pip install -r requirements.txt
+
+```
+
+4. Configurar .env con tu API Key de Groq:
+
+```bash
+GROQ_API_KEY=gsk_xxxxxxxxxxxxxxxxxxxxxxx
+
+```
+
+## 🏃‍♂️ Uso
+```bash
+streamlit run app.py
 
 
+```
+1. Ingresa el tema y la audiencia.
 
+2. Selecciona la plataforma y el tono deseado.
 
+3. Haz clic en Generar contenido.
 
+4. Obtén el texto listo para publicar.
+
+## ⚡ Modelos usados
+
+- Por defecto: llama-3.1-8b-instant
+
+- Fallbacks: llama-3.3-70b-versatile, gemma2-9b-it, groq/compound, groq/compound-mini
+
+Si un modelo deja de estar disponible, el cliente Groq intentará automáticamente los modelos alternativos.
+
+## 📝 Notas
+
+- Esta PoC está enfocada en minimizar coste, usando modelos gratuitos o locales.
+
+- Preparada para ser extensible, incluyendo generación de imágenes o publicación automática.
